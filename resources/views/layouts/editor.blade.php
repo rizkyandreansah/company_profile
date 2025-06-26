@@ -12,6 +12,7 @@
     <title>@yield('tittle')</title>
 
     @include('includes.editor.style')    
+    @yield('style')
 
 </head>
 

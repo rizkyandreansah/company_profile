@@ -1,0 +1,471 @@
+/* Hubungi kami css*/
+.hubungi-section {
+    background: #f8f9fa;
+    padding: 40px 0;
+    
+}
+
+.hubungi-content {
+    padding-top: 90px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: stretch;
+    /* Tambahkan container dengan padding untuk memberi ruang di kiri dan kanan */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/* Form Section */
+.form-section {
+    background: white;
+    padding: 60px 50px;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 15%);
+    height: fit-content;
+    /* Pastikan ukuran yang konsisten */
+    min-height: 100%;
+}
+
+.form-title {
+    color: #1a202c;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    background: #f8f9fa;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #667eea;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.form-control::placeholder {
+    color: #adb5bd;
+}
+
+.form-control.textarea {
+    min-height: 100px;
+    resize: vertical;
+    font-family: inherit;
+}
+
+.submit-btn {
+    width: 100%;
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+/* Office Info Section */
+.office-info {
+    color: white;
+    /* Pastikan mengikuti grid stretch */
+}
+
+.office-card {
+    background: #007bff;
+    backdrop-filter: blur(10px);
+    padding: 60px 50px;
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 5px 15px rgb(0 0 0 / 15%);
+    /* Pastikan ukuran yang sama dengan form section */
+    min-height: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.office-title {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    text-align: center;
+    color: white;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.contact-item:last-of-type {
+    margin-bottom: 20px;
+}
+
+.contact-icon {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    font-size: 1rem;
+    color: white;
+    flex-shrink: 0;
+}
+
+.contact-info h4 {
+    font-size: 1rem;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: white;
+}
+
+.contact-info p {
+    opacity: 0.9;
+    line-height: 1.5;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.company-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.address-text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    opacity: 0.95;
+    margin-bottom: 20px;
+}
+
+/* Tambahkan wrapper untuk bagian konten agar map selalu di bawah */
+.office-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-details {
+    flex: 0 0 auto;
+    margin-bottom: 20px;
+}
+
+/* Map Container */
+.map-container {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    background: white;
+    padding: 6px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 220px;
+    border: none;
+    border-radius: 8px;
+    flex-grow: 1;
+}
+
+.map-overlay {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(255,255,255,0.95);
+    padding: 10px 12px;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+}
+
+.map-overlay h4 {
+    color: #667eea;
+    font-size: 0.85rem;
+    margin-bottom: 3px;
+    font-weight: 600;
+}
+
+.map-overlay p {
+    color: #666;
+    font-size: 0.75rem;
+    line-height: 1.4;
+}
+
+.notification-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.notification-overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.notification-modal {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    transform: scale(0.7);
+    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.notification-overlay.show .notification-modal {
+    transform: scale(1);
+}
+
+.notification-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #28a745;
+}
+
+.notification-modal.error .notification-icon {
+    color: #dc3545;
+}
+
+.notification-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.notification-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.notification-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.notification-btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 80px;
+}
+
+.notification-btn.primary {
+    background: #007bff;
+    color: white;
+}
+
+.notification-btn.primary:hover {
+    background: #0056b3;
+    transform: translateY(-1px);
+}
+
+.notification-btn.secondary {
+    background: #f8f9fa;
+    color: #666;
+    border: 1px solid #dee2e6;
+}
+
+.notification-btn.secondary:hover {
+    background: #e9ecef;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .notification-modal {
+        padding: 25px 20px;
+        margin: 0 20px;
+        max-width: 90%;
+    }
+    
+    .notification-icon {
+        font-size: 2.8rem;
+    }
+    
+    .notification-title {
+        font-size: 1.2rem;
+    }
+    
+    .notification-text {
+        font-size: 0.95rem;
+    }
+
+    .hubungi-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        max-width: none;
+    }
+
+    .form-section {
+        padding: 25px 20px;
+    }
+
+    .form-title {
+        font-size: 1.3rem;
+    }
+
+    .office-title {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .office-card {
+        padding: 25px 20px;
+        height: auto;
+        min-height: auto;
+    }
+
+    .map-container iframe {
+        height: 200px;
+    }
+
+    .map-overlay {
+        position: static;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .notification-modal {
+        padding: 25px 20px;
+        margin: 0 15px;
+    }
+    
+    .notification-icon {
+        font-size: 2.5rem;
+    }
+    
+    .notification-title {
+        font-size: 1.1rem;
+    }
+    
+    .notification-text {
+        font-size: 0.9rem;
+    }
+    
+    .notification-buttons {
+        flex-direction: column;
+    }
+    
+    .notification-btn {
+        width: 100%;
+    }
+    
+    .hubungi-content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .hubungi-section {
+        padding: 40px 0;
+    }
+
+    .form-section {
+        padding: 20px 15px;
+    }
+
+    .form-title {
+        font-size: 1.2rem;
+    }
+
+    .office-title {
+        font-size: 1.2rem;
+    }
+
+    .office-card {
+        padding: 20px 15px;
+    }
+
+    .company-name {
+        font-size: 1rem;
+    }
+
+    .contact-item {
+        font-size: 0.9rem;
+    }
+
+    .contact-icon {
+        width: 35px;
+        height: 35px;
+        min-width: 35px;
+        min-height: 35px;
+    }
+}

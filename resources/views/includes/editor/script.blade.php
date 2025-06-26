@@ -15,3 +15,5 @@
     <!-- Page level custom scripts -->
     <script src="{{ asset('template_admin/js/demo/datatables-demo.js')}}"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css">
